@@ -1,7 +1,7 @@
 {
-  "name": "@goproperly/js-package",
+  "name": "@goproperly/browserslist-config-properly",
   "version": "1.0.0",
-  "description": "",
+  "description": "Browserslist configuration for Properly websites",
   "main": "index.js",
   "scripts": {
     "test": "echo \"No tests yet!\" && exit 0",
@@ -9,9 +9,11 @@
     "lint:fix": "eslint --fix . || true",
     "release": "semantic-release"
   },
-  "author": "",
-  "license": "UNLICENSED",
-  "files": [],
+  "author": "Gavin Sharp <gavin@goproperly.com>",
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
   "dependencies": {},
   "devDependencies": {
     "@goproperly/eslint-config-properly-base": "^1.0.2",
@@ -22,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/GoProperly/js-package.git"
+    "url": "https://github.com/GoProperly/browserslist-config-properly.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
