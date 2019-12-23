@@ -12,7 +12,9 @@
   "author": "Gavin Sharp <gavin@goproperly.com>",
   "license": "MIT",
   "files": [
-    "index.js"
+    "index.js",
+    "production.js",
+    "development.js"
   ],
   "dependencies": {},
   "devDependencies": {
