@@ -1,6 +1,6 @@
 {
   "name": "@goproperly/browserslist-config-properly",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Browserslist configuration for Properly websites",
   "main": "index.js",
   "scripts": {
