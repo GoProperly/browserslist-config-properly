@@ -4,10 +4,16 @@
   "description": "Browserslist configuration for Properly websites",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"No tests yet!\" && exit 0",
+    "commit": "git-cz",
     "lint": "eslint .",
     "lint:fix": "eslint --fix . || true",
-    "release": "semantic-release"
+    "release": "semantic-release",
+    "test": "echo \"No tests yet!\" && exit 0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   },
   "author": "Gavin Sharp <gavin@goproperly.com>",
   "license": "MIT",
@@ -18,10 +24,15 @@
   ],
   "dependencies": {},
   "devDependencies": {
+    "@commitlint/cli": "^8.3.4",
+    "@commitlint/config-conventional": "^8.3.4",
     "@goproperly/eslint-config-properly-base": "^1.0.13",
     "@semantic-release/changelog": "^3.0.6",
     "@semantic-release/git": "^7.0.18",
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "^3.0.2",
     "eslint": "^6.8.0",
+    "husky": "^4.0.6",
     "prettier": "^1.19.1",
     "semantic-release": "^15.14.0"
   },
@@ -31,5 +42,10 @@
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   }
 }
