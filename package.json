@@ -1,8 +1,22 @@
 {
   "name": "@goproperly/browserslist-config-properly",
-  "version": "1.0.7",
   "description": "Browserslist configuration for Properly websites",
+  "license": "MIT",
+  "author": "Gavin Sharp <gavin@goproperly.com>",
+  "homepage": "https://github.com/GoProperly/browserslist-config-properly#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GoProperly/browserslist-config-properly.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GoProperly/browserslist-config-properly/issues"
+  },
+  "version": "1.0.7",
   "main": "index.js",
+  "files": [
+    "development.js",
+    "production.js"
+  ],
   "scripts": {
     "commit": "git-cz",
     "lint": "eslint .",
@@ -15,13 +29,6 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
-  "author": "Gavin Sharp <gavin@goproperly.com>",
-  "license": "MIT",
-  "files": [
-    "index.js",
-    "production.js",
-    "development.js"
-  ],
   "dependencies": {},
   "devDependencies": {
     "@commitlint/cli": "^8.3.4",
@@ -36,10 +43,6 @@
     "lint-staged": "^9.5.0",
     "prettier": "^1.19.1",
     "semantic-release": "^15.14.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/GoProperly/browserslist-config-properly.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
