@@ -7,15 +7,11 @@ There are two exports that can be used separately:
 - `@goproperly/browserslist-config-properly/development`
 
 E.g. in `package.json`:
+WARNING: @babel/preset-env doesnot support environment-based 
 ```
-  "browserslist": {
-    "production": [
-      "extends @goproperly/browserslist-config-properly/production"
-    ],
-    "development": [
-      "extends @goproperly/browserslist-config-properly/development"
-    ]
-  },
+  "browserslist": [
+    "extends @goproperly/browserslist-config-properly/production"
+  ],
 ```
 or:
 ```
@@ -26,7 +22,7 @@ or:
 (defaults to the production config)
 
 ## Use
-See https://github.com/GoProperly/template-web-app/pull/61/files for an example. Basically:
+Basically:
 1. Make sure your project is [configured to use the GitHub Package Registry](https://help.github.com/en/github/managing-packages-with-github-packages/configuring-npm-for-use-with-github-packages#installing-a-package)
 1. Install this package:
 
