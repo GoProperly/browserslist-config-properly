@@ -7,7 +7,6 @@ There are two exports that can be used separately:
 - `@goproperly/browserslist-config-properly/development`
 
 E.g. in `package.json`:
-WARNING: @babel/preset-env doesnot support environment-based 
 ```
   "browserslist": [
     "extends @goproperly/browserslist-config-properly/production"
