@@ -2,7 +2,7 @@
   "name": "@goproperly/browserslist-config-properly",
   "description": "Browserslist configuration for Properly websites",
   "license": "MIT",
-  "author": "Gavin Sharp <gavin@goproperly.com>",
+  "author": "Properly <info@properly.ca>",
   "homepage": "https://github.com/GoProperly/browserslist-config-properly#readme",
   "repository": {
     "type": "git",
